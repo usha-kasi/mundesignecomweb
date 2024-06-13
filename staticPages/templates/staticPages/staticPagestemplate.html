@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Pages</title>
+</head>
+<body>
+    {% for staticPagesobj in all_collection %}
+    <h2><a href="{% url 'details' staticPagesobj.id %}">{{ staticPagesobj.collection_name }}</a></h2>
+    <h3>{{ staticPagesobj.description }}</h3>
+    <br/>
+    {% endfor %}
+</body>
+</html>

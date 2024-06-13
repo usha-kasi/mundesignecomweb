@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Piece Detail</title>
+</head>
+<body>
+    {% if piece %}
+        <h1>{{ piece.title }}</h1>
+        <p>{{ piece.content }}</p>
+    {% else %}
+        <h1>{{ error_message }}</h1>
+    {% endif %}
+</body>
+</html>
