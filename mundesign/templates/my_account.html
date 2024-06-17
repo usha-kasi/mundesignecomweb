@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Saved Addresses - Jewelry Store{% endblock %}
+
+{% block content %}
+<div class="section my-account">
+    <h1>My Account</h1>
+    <a href="{% url 'order_history' %}">Order History</a><br>
+    <a href="{% url 'saved_addresses' %}">Saved Addresses</a><br>
+    <a href="{% url 'saved_payment_details' %}">Saved Payment Details</a><br>
+    <a href="{% url 'wishlist' %}">Wishlist</a><br>
+    <a href="{% url 'recommendations' %}">Recommendations</a><br>
+
+</div>
+
+{% endblock %}
+
